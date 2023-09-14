@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Fredericka+the+Great&family=IBM+Plex+Mono:wght@500&family=Libre+Bodoni&family=Ms+Madi&family=Niconne&family=Playball&family=Poppins:wght@400;700&family=Rajdhani&family=Roboto:wght@100&family=Tai+Heritage+Pro&family=Tangerine:wght@700&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+    background-position:right;
+    background-position:bottom right;
+box-shadow: 2px 2px black;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-image: url("pngegg\ \(5\).png");
+    background-color: rgb(230, 228, 228);
+}
+#nav{
+    /* justify-content: space-evenly; */
+    background-color: rgb(230, 228, 228);
+    width: 100%;
+    /* height: 60px; */
+display: flex;
+}
+#nav ul{
+
+
+    
+display: flex;
+justify-content: flex-end;
+    /* text-align:justify; */
+    /* justify-content: space-evenly; */
+    width: 100%;
+}
+
+#nav ul li{
+/* margin-top: 10px; */
+    /* color: black; */
+/* font-size: 20px; */
+    display:inline-block;
+    /* display: inline-block; */
+}
+
+#logo{
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+padding-bottom: 2px;
+    border-bottom: 1px solid rgb(186, 5, 5);
+    margin-right: auto;
+    color: rgb(193, 4, 4);
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-left: 160px;
+    place-items: start;
+    place-content: start;
+    justify-content: left;
+    text-align: start;
+}
+
+#center{
+    border-bottom: 1px solid red;
+    font-family: 'Rajdhani', sans-serif;
+/* font-weight: bold; */
+    /* font-family: ; */
+    margin-right: 70px;
+    font-size: 40px;
+margin-top: 20px;
+    /* margin-left: auto;
+    justify-content: center;
+    text-align: center; */
+}
+#center:hover{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    /* padding: 10px; */
+    /* transform: 2px; */
+    border: none;
+    color: red;
+}
+
+#endlogo{
+    border-radius: 55%;
+    color: white;
+    padding: 15px 20px 10px 20px;
+background-color: rgb(193, 4, 4);
+margin-top: 20px;
+
+font-size: 35px;
+    margin-right: 70px;
+
+    text-align: end;
+}
+
+#endlogo:hover{
+    transition: 0.5s ease-in-out;
+    /* border: 1px solid red; */
+    background-color: black;
+}
+.main{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    /* margin-top: -100px; */
+    /* place-content: center; */
+    place-items: center;
+}
+
+
+#line{
+    width: 100%;
+    height: 100px;
+    /* box-shadow: 3px 3px 7px black; */
+    text-align: center;
+
+    margin-top: -290px;
+
+}
+
+#line img{
+    filter: drop-shadow(8px 8px 7px black);
+    margin-right: 700px;
+    text-align: center;
+    height: 600px;
+    width: 310px;
+    margin-top: -350px;
+}
+#line h1{
+    width: 100%;
+    height: 100px;
+    background: rgb(255,98,98);
+background: linear-gradient(77deg, rgba(255,98,98,1) 0%, rgba(159,1,11,1) 100%);
+    padding-left: 250px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 90px;
+}
+#line h2{
+    letter-spacing: 2px;
+    padding-left: 290px;
+    color: rgb(88, 89, 89);
+    font-family:fantasy;
+    font-size: 90px;
+}
+#info{
+    font-weight: lighter;
+    color: #353232;
+    text-transform: uppercase;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 30px;
+    padding-left: 450px;
+}
+#info2{
+    display: none;
+    /* border: 1px solid red; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family:sans-serif;
+    padding: 70px;
+}
+
+</style>
+</head>
+<body  >
+
+
+    <h1 id="info2" >This website is only for laptop and PC screen. <br>
+    please open it on destop.
+    </h1>
+
+
+<div id="body" >
+    <div id="nav">
+        <ul  >
+            <li id="logo" >COCA-COLA</li>
+            <li id="center" onclick="original()" >ORIGINAL</li>
+            <li id="center" onclick="zero()" >ZERO</li>
+            <li  id="endlogo" > <i class="fa-solid fa-martini-glass" style="color: #f2f2f2;"></i></li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+
+    
+        <div id="line">
+            <h2>START FROM 19*</h2>
+            <h1 id="head" >COCA-COLA</h1>
+            
+            <h3 id="info" >
+
+ Coca-Cola: the perfect match for any occasion.
+
+            </h3>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi odit id!</p> -->
+                        <img id="img" src="pngegg (2).png" alt="">
+            
+                    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+ <script>
+
+if (screen.width < 967) {
+document.getElementById("body").style.display="none"
+document.getElementById("info2").style.display="block"
+    
+
+}
+const t1= gsap.timeline()
+
+
+function zero(){
+
+    let audio = new Audio("sound.mp3");
+    audio.play()
+    t1.from("#img",{
+        opecity:0,
+    stagger:0.4,
+    y:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+
+    t1.from("#head",{
+        opecity:0,
+    stagger:0.4,
+    x:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+
+    t1.from("h2,h3",{
+        opacity:0,
+    stagger:0.4,
+    x:-300,
+    
+    duration:1,
+    delay:0.5, 
+    })
+    document.getElementById("logo").style.color="black"
+
+        document.getElementById("endlogo").style.background="black"
+        document.getElementById("head").style.background="black"
+        document.getElementById("img").src="pngegg (3).png"
+    }
+
+    function original(){
+        let audio = new Audio("sound.mp3");
+    audio.play()
+
+        
+    t1.from("#img",{
+        opecity:0,
+    stagger:0.4,
+    y:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+
+    t1.from("#head",{
+        opecity:0,
+    stagger:0.4,
+    x:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+
+    t1.from("h2,h3",{
+        opacity:0,
+    stagger:0.4,
+    x:-300,
+    
+    duration:1,
+    delay:0.5, 
+    })
+
+    document.getElementById("logo").style.color="red"
+
+        document.getElementById("endlogo").style.background="red"
+        document.getElementById("head").style.background="linear-gradient(77deg, rgba(255,98,98,1) 0%, rgba(159,1,11,1) 100%)"
+        document.getElementById("img").src="pngegg (2).png"
+    }
+
+
+
+
+t1.from("#nav,ul,li",{
+    opecity:0,
+    stagger:0.4,
+    y:-100,
+    duration:1,
+    delay:0.5,
+    })
+    t1.from("#head",{
+        opecity:0,
+    stagger:0.4,
+    x:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+    t1.from("#img",{
+        opecity:0,
+    stagger:0.4,
+    y:-1900,
+    duration:1,
+    delay:0.5, 
+    })
+    t1.from("h2,h3",{
+        opacity:0,
+    stagger:0.4,
+    x:-300,
+    
+    duration:1,
+    delay:0.5, 
+    })
+// gsap.to("#scrolldown",{
+//     y:60,
+//     duration:0.9,
+//     yoyo:true,
+//     repeat:-1,
+// })
+
+ </script>
+
+</html>
